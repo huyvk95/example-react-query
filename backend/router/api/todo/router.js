@@ -1,6 +1,6 @@
 const { Router } = require("express");
 
-export const router = Router();
+const router = Router();
 
 const todos = [];
 
@@ -36,3 +36,5 @@ router
 
     res.send(todos);
   });
+
+module.exports = { router };
