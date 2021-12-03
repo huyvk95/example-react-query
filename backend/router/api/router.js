@@ -1,6 +1,6 @@
-import { Router } from "express";
+const { Router } = require("express");
 
-import { router as todoRouter } from "./todo";
+const { router: todoRouter } = require("./todo");
 
 export const router = Router();
 

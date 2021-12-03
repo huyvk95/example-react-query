@@ -1,4 +1,4 @@
-import { Router } from "express";
+const { Router } = require("express");
 
 export const router = Router();
 
@@ -33,6 +33,6 @@ router
   .delete((req, res) => {
     const { id } = req.body;
     todos = todos.filter((o) => o.id !== id);
-    
+
     res.send(todos);
   });

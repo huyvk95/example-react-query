@@ -1,6 +1,6 @@
-import { Router } from "express";
+const { Router } = require("express");
 
-import { router as apiRouter } from "./api";
+const { router: apiRouter } = require("./api");
 
 export const router = Router();
 

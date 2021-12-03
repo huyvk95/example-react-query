@@ -1,0 +1,19 @@
+{
+  "name": "example-react-query",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:be": "cd backend && yarn start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huyvk95/example-react-query.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huyvk95/example-react-query/issues"
+  },
+  "homepage": "https://github.com/huyvk95/example-react-query#readme"
+}
