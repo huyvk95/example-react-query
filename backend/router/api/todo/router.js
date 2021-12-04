@@ -2,7 +2,7 @@ const { Router } = require("express");
 
 const router = Router();
 
-const todos = [];
+let todos = [];
 
 router
   .route("/")

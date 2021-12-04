@@ -4,15 +4,18 @@ import { getTodos } from "../api";
 
 export const List = () => {
   const { data } = useQuery({
-    queryKey: "getTodos",
-    queryFn: () => getTodos(),
+    queryKey: "todos",
+    queryFn: async () => {
+      const { data } = await getTodos();
+      return data;
+    },
   });
-
-  console.log(data);
 
   return (
     <div>
-      <Item title={"Title"} id={"Oke"} key={"Oke"} />
+      {data?.map((o) => (
+        <Item {...o} key={o.id} />
+      ))}
     </div>
   );
 };
